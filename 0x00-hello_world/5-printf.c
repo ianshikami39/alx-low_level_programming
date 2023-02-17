@@ -2,12 +2,12 @@
 
 /**
  * main - this is the main function
- *
- *Return: 0 when successfull
+ * Description: This func prints a message to the console using the print()
+ *  * Return:Always 0
  */
 
 int main(void)
 {
-	printf("with proper gramar,but the outcome is a piece of art,\n");
+	printf("%s", "with proper gramar,but the outcome is a piece of art,\n");
 	return (0);
 }
