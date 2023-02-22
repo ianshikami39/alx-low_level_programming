@@ -1,4 +1,5 @@
-#include <studio.h>
+#include "main.h"
+
 /**
  * main - main function
  * Return: always 0
