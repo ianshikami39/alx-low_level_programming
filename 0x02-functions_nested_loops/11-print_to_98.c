@@ -1,22 +1,16 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_to_98 - prints numbers to 98
+ * print_to_98 - function to print natural numbers
  *
- * @n: starting integer
+ * @n: function parameter
  *
- * Description: prints all natural number from n - 98
- *
- * Return: void
+ * Return: always 0
  */
 
 void print_to_98(int n)
 {	
-	if (n < 98)
-	{
-		while (n < 98)
-		
+	int i;
 
 	if (n >= 0 ; && n <= 98)
 	{
