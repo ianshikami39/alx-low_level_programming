@@ -35,7 +35,7 @@ void print_buffer(char *b, int size)
 					break;
 			if (*(b + l)  < 32  || *(b + l) > 126)
 
-			print("%c", ',');
+			printf("%c", ',');
 				else
 					printf("c", *(b + l));
 			}
