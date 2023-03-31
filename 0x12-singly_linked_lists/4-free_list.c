@@ -1,26 +1,22 @@
+#include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct list_s
-{
-	char *str;
-	struct list_s *next;
-} list_t;
-
 /**
- * free_list - frees a list
+ * free_list - frees a lists
  * @head: head of list
  */
+
 void free_list(list_t *head)
 {
-	list_t *current = head;
+	list_t *buffer;
 
-	while (current != NULL)
+	while (head != NULL)
 	{
-		head = head->next;
-		free(current->str);
-		free(current);
-		current = head;
+		buffer = head->next;
+		free(head->str);
+		free(head);
+		head = buffer;
 	}
 }
