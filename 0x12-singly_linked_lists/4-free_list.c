@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct list_s {
+typedef struct list_s
+{
 	char *str;
 	struct list_s *next;
 } list_t;
@@ -14,7 +15,7 @@ typedef struct list_s {
 void free_list(list_t *head)
 {
 	list_t *current = head;
-	
+
 	while (current != NULL)
 	{
 		head = head->next;
